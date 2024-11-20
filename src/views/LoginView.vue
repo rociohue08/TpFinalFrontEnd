@@ -38,7 +38,7 @@ function select() {
 <template>
 <div class="w-full px-2 py-2 sm:px-0">
     <TabGroup>
-        <!-- Caja Principal -->
+        <!--tabs -->
         <div 
     :class="theme.isDark ? 'bg-gray-700 text-violet-100' : 'bg-gray-200 text-violet-500'" 
     class="rounded shadow flex flex-col justify-between p-04" 

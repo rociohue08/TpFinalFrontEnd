@@ -34,7 +34,7 @@ async function loginWithCredentials() {
                 :class="theme.isDark ? 'text-blue-100' : 'text-gray-900'" 
                 class="text-lg font-semibold leading-tight tracking-tight md:text-xl text-center"
             >
-                Ingresa Con Tu Cuenta
+                Ingresa con una cuenta existente 😉
             </h1>
         </div>
         <form 
@@ -42,14 +42,14 @@ async function loginWithCredentials() {
             class="p-4 space-y-3 md:space-y-4 sm:p-6 max-w-[400px]" 
             action="#"
         >
-            <!-- Campo Email -->
+            <!-- Campo del email -->
             <div>
                 <label 
                     :class="theme.isDark ? 'text-blue-100' : 'text-gray-900'" 
                     for="email" 
                     class="block mb-2 text-sm font-medium"
                 >
-                    Tu Email
+                    Email
                 </label>
                 <input 
                     v-model="reactiveCredentials.email" 
@@ -63,14 +63,14 @@ async function loginWithCredentials() {
                 >
             </div>
             
-            <!-- Campo Password -->
+            <!-- Campo de la contraseña -->
             <div>
                 <label 
                     :class="theme.isDark ? 'text-blue-100' : 'text-gray-900'" 
                     for="password" 
                     class="block mb-2 text-sm font-medium"
                 >
-                    Password
+                    Contraseña
                 </label>
                 <input 
                     v-model="reactiveCredentials.password" 
@@ -84,7 +84,6 @@ async function loginWithCredentials() {
                 >
             </div>
             
-            <!-- Botón de Enviar -->
             <button 
                 type="submit" 
                 :class="theme.isDark ? 'hover:bg-violet-700 focus:ring-violet-800 bg-violet-600' : 'hover:bg-violet-700'" 
@@ -94,7 +93,7 @@ async function loginWithCredentials() {
                 <SpinnerComponent v-show="sesion.loading" class="my-auto"/>
             </button>
             
-            <!-- Mensaje de Error -->
+            <!-- msj en caso de  error -->
             <small 
                 v-if="sesion.error === '' ? false : true" 
                 class="text-center text-red-500 text-sm"
